@@ -13,9 +13,9 @@ int main(void){
     for(i=0; i<total; ++i){
         scanf("%d", &scores[i]);
     }
-    printf("scores=");
+    printf("scores　=　");
     for (i=0; i<total; ++i){
-        printf("%d,", scores[i]);
+        printf("%d　", scores[i]);
     }
     printf("\n");
     //数値を降べきの順にソートするためのfor文を作る
@@ -34,9 +34,9 @@ int main(void){
         }
 
     //降べきの順にソートした数値を出力する
-    printf("results=");
+    printf("results　=　");
     for (i=0; i<total; ++i){
-        printf("%d,", scores[i]);
+        printf("%d　", scores[i]);
     }
     printf("\n");
 }

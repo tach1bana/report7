@@ -3,9 +3,9 @@
 int main(void){
     int i, j, num;
     int scores[6] = {100, 60, 70, 100, 90, 80};
-    printf("scores=");
+    printf("scores　=　");
     for (i=0; i<6; ++i){
-        printf("%d,", scores[i]);
+        printf("%d　", scores[i]);
     }
     printf("\n");
     //数値を降べきの順にソートするためのfor文を作る
@@ -24,9 +24,9 @@ int main(void){
         }
 
     //降べきの順にソートした数値を出力する
-    printf("results=");
+    printf("results　=　");
     for (i=0; i<6; ++i){
-        printf("%d,", scores[i]);
+        printf("%d　", scores[i]);
     }
     printf("\n");
 }
