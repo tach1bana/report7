@@ -20,15 +20,15 @@ int main(void){
     printf("\n");
     //数値を降べきの順にソートするためのfor文を作る
     //入力された数字を全て比較する
-    for (i=0; i<total-1; ++i) {
-        for (j=0; j<total-1; ++j) {
+    for (i=0; i<total; ++i) {
+        for (j=i+1; j<total; ++j) {
             //数字を比較し、数字を降べきの順に並び直す
             //このif文によって適当に入力された数値を降べきの順に整理されたものをscoresという配列に保管し直す。
             //numは一時的に数字を保管しとくためだけに使用している。
-            if (scores[j+1] < scores[j]) {
-                num =  scores[j];
-                scores[j] = scores[j+1];
-                scores[j+1] = num;
+            if (scores[i] < scores[j]) {
+                num =  scores[i];
+                scores[i] = scores[j];
+                scores[j] = num;
                 }
             }
         }
