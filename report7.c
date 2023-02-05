@@ -23,7 +23,8 @@ int main(void){
     for (i=0; i<total-1; ++i) {
         for (j=0; j<total-1; ++j) {
             //数字を比較し、数字を降べきの順に並び直す
-            //このif文によって適当に入力された数値を降べきの順に整理されたものをnumという配列に保管し直す
+            //このif文によって適当に入力された数値を降べきの順に整理されたものをscoresという配列に保管し直す。
+            //numは一時的に数字を保管しとくためだけに使用している。
             if (scores[j+1] < scores[j]) {
                 num =  scores[j];
                 scores[j] = scores[j+1];
